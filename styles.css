@@ -1,0 +1,161 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+header{
+background:#2f855a;
+color:white;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(#68d391,#48bb78);
+color:white;
+}
+
+.hero h2{
+font-size:2.5rem;
+margin-bottom:15px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+background:white;
+color:#2f855a;
+padding:12px 20px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.filtros{
+max-width:1200px;
+margin:30px auto;
+text-align:center;
+}
+
+#busqueda{
+width:300px;
+padding:10px;
+margin-bottom:15px;
+}
+
+.categorias button{
+padding:10px 15px;
+margin:5px;
+cursor:pointer;
+border:none;
+border-radius:5px;
+background:#2f855a;
+color:white;
+}
+
+#catalogo{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+#catalogo h2{
+text-align:center;
+margin-bottom:25px;
+}
+
+.productos-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 3px 8px rgba(0,0,0,0.15);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-body{
+padding:15px;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.precio{
+color:#2f855a;
+font-size:1.3rem;
+font-weight:bold;
+margin:10px 0;
+}
+
+.stock{
+color:#666;
+}
+
+.card button{
+width:100%;
+margin-top:15px;
+padding:10px;
+border:none;
+background:#2f855a;
+color:white;
+cursor:pointer;
+}
+
+.modal{
+display:none;
+position:fixed;
+width:100%;
+height:100%;
+left:0;
+top:0;
+background:rgba(0,0,0,0.6);
+}
+
+.modal-content{
+background:white;
+max-width:600px;
+margin:8% auto;
+padding:25px;
+border-radius:10px;
+}
+
+#cerrar{
+float:right;
+cursor:pointer;
+font-size:28px;
+}
+
+footer{
+margin-top:50px;
+text-align:center;
+padding:30px;
+background:#2f855a;
+color:white;
+}
