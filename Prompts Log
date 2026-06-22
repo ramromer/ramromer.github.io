@@ -1,0 +1,331 @@
+Prompt inicial:
+
+Realiza una demo de un sitio web de E-commerce especializado en servicios y productos personalizados para mascotas, con el nombre Pet Shop Toys
+
+Por razones de la arquitectura de la base de datos, el diseño del sitio web DEBE adaptarse y es por ello que se debera tener en cuenta el uso del siguiente Registro para los productos (te paso el registro en pseudocodigo)[Piensa en el "registro" como algo que luego en una version posterior del codigo se transformaria en un JSON a la hora de implementarlo y escalar, pero por ahora, trabajaremos con esta estructura de datos]
+
+Producto = Registro
+	id: N(10)
+	nombre: AN(50)
+	desc: AN(300)
+	categoria_id = (“Felinos”, “Caninos”, “Otros”)
+	fabricante: AN(50)
+	precio: real
+	stock: entero
+	activo: booleano
+FinRegistro
+
+Te comento que "id" es el campo CLAVE que identifica cada producto en forma unívoca, pero por ahora no te preocupes por el backend, es decir, solo haz focus en el frontend.
+
+En la consigna tambien dice:
+
+Entrega
+El trabajo deberá incluir:
+
+ Nombre y descripción breve del e-commerce elegido. ->(ya lo indique mas arriba Pet Shop Toys)
+ Diseño del registro principal. -> (ya te lo envié)
+ Identificación y explicación de la clave. -> (ya te lo señale arriba)
+ Captura de los prompts utilizados con la IA. (yo me ocupo de esto)
+
+Video demo de la app generada. Incluyendo el tutorial de cómo se usa y qué muestra. (luego grabo pantalla mostrando lo que tu me envies como demo)
+
+App ecommerce con URL publicada. (yo me ocupo de publicarlo)
+
+
+
+Respuesta:
+
+
+Para esta entrega te conviene presentar una landing page + catálogo de productos sencilla, pero profesional, que refleje correctamente la estructura del registro que te exige la consigna. Como el backend no es requerido, todos los productos pueden estar cargados de forma estática utilizando exactamente los campos del registro.
+
+1. Nombre del E-commerce
+Pet Shop Toys
+Descripción breve
+Pet Shop Toys es un e-commerce especializado en la venta de productos personalizados para mascotas. Ofrece juguetes, accesorios, artículos de entretenimiento y productos exclusivos para perros, gatos y otras mascotas. La plataforma permite visualizar productos organizados por categorías, consultar stock disponible y acceder a información detallada de cada artículo.
+
+2. Diseño del Registro Principal
+
+Producto = Registro
+    id: N(10)
+    nombre: AN(50)
+    desc: AN(300)
+    categoria_id: ("Felinos", "Caninos", "Otros")
+    fabricante: AN(50)
+    precio: real
+    stock: entero
+    activo: booleano
+FinRegistro
+
+Explicación de los campos
+Campo
+Descripción
+id
+Identificador único del producto
+nombre
+Nombre comercial del producto
+desc
+Descripción breve
+categoria_id
+Categoría a la que pertenece
+fabricante
+Marca o fabricante
+precio
+Precio de venta
+stock
+Cantidad disponible
+activo
+Indica si el producto está visible para la venta
+
+3. Identificación y Explicación de la Clave
+La clave principal del registro es:
+
+id
+
+Este campo identifica cada producto de forma única dentro del sistema.
+Ejemplo:
+
+1001 -> Pelota Personalizada Huellitas
+1002 -> Rascador Premium Gatuno
+1003 -> Collar Grabado Deluxe
+
+No pueden existir dos productos con el mismo ID.
+La clave permitirá posteriormente:
+	•	Buscar productos rápidamente.
+	•	Actualizar stock.
+	•	Gestionar ventas.
+	•	Relacionar pedidos con productos.
+	•	Escalar el sistema a una base de datos o JSON.
+
+4. Demo del Sitio Web
+Página Principal
+
+-----------------------------------------------------
+                    PET SHOP TOYS
+      Productos personalizados para mascotas
+-----------------------------------------------------
+
+[Inicio] [Caninos] [Felinos] [Otros] [Contacto]
+
+-----------------------------------------------------
+            ¡Los favoritos de nuestras mascotas!
+-----------------------------------------------------
+
+[Foto]
+Pelota Personalizada Huellitas
+$ 8.500
+Stock: 12
+
+[Ver Producto]
+
+-----------------------------------------------------
+
+[Foto]
+Rascador Premium Gatuno
+$ 18.900
+Stock: 5
+
+[Ver Producto]
+
+-----------------------------------------------------
+
+[Foto]
+Collar Grabado Deluxe
+$ 12.300
+Stock: 20
+
+[Ver Producto]
+
+
+Vista de Producto
+
+-----------------------------------------------------
+Pelota Personalizada Huellitas
+-----------------------------------------------------
+
+ID: 1001
+
+Categoría:
+Caninos
+
+Fabricante:
+Pet Toys Factory
+
+Precio:
+$ 8.500
+
+Stock:
+12 unidades
+
+Descripción:
+Pelota resistente con nombre personalizado
+grabado para perros de todas las edades.
+
+[Agregar al carrito]
+
+
+Vista por Categorías
+Caninos
+
+- Pelota Personalizada Huellitas
+- Collar Grabado Deluxe
+- Mordillo Personalizado
+
+Felinos
+
+- Rascador Premium Gatuno
+- Ratón Interactivo
+- Torre de Juegos Felina
+
+Otros
+
+- Hamaca para Conejos
+- Túnel para Hurones
+- Juguete para Aves
+
+
+5. Ejemplo de Datos Utilizando el Registro
+
+Producto 1
+
+id: 1001
+nombre: Pelota Personalizada Huellitas
+desc: Pelota resistente personalizada con nombre.
+categoria_id: Caninos
+fabricante: Pet Toys Factory
+precio: 8500.00
+stock: 12
+activo: verdadero
+
+
+Producto 2
+
+id: 1002
+nombre: Rascador Premium Gatuno
+desc: Rascador de cartón reforzado para gatos.
+categoria_id: Felinos
+fabricante: CatFun
+precio: 18900.00
+stock: 5
+activo: verdadero
+
+
+Producto 3
+
+id: 1003
+nombre: Collar Grabado Deluxe
+desc: Collar personalizado con placa grabada.
+categoria_id: Caninos
+fabricante: PetStyle
+precio: 12300.00
+stock: 20
+activo: verdadero
+
+
+Si quieres una entrega más impactante, puedo generarte también el HTML + CSS completo de una demo moderna (estilo MercadoLibre/Amazon) lista para publicar en GitHub Pages o Netlify.
+
+
+Prompt 2:
+Si, landing page con un catalogo sencillo seria perfecto. Por favor dame algo que pueda publicar y donde pueda hacer una demo como lo venimos charlando, hacelo con HTML css y js vanilla por favor
+
+Respuesrta 2:
+
+Perfecto. Para una entrega académica yo haría una estructura extremadamente simple:
+
+pet-shop-toys/
+│
+├── index.html
+├── styles.css
+└── script.js
+
+Con esto podrás subirlo directamente a GitHub Pages.
+
+index.html
+
+
+
+
+
+
+
+<div class="categorias">
+    <button onclick="filtrarCategoria('Todos')">Todos</button>
+    <button onclick="filtrarCategoria('Caninos')">Caninos</button>
+    <button onclick="filtrarCategoria('Felinos')">Felinos</button>
+    <button onclick="filtrarCategoria('Otros')">Otros</button>
+</div>
+<div id="productos" class="productos-grid"></div>
+
+
+styles.css
+
+
+
+
+
+
+
+*{ margin:0; padding:0; box-sizing; font-family, Helvetica, sans-serif; }
+body{ background:#f5f5f5; }
+header{ background:#2f855a; color; padding:20px; display; justify-content; align-items; }
+nav a{ color; text-decoration; margin-left:20px; }
+.hero{ text-align; padding:80px 20px; background(#68d391,#48bb78); color; }
+.hero h2{ font-size:2.5rem; margin-bottom:15px; }
+.btn{ display; margin-top:20px; background; color:#2f855a; padding:12px 20px; border-radius:8px; text-decoration; font-weight; }
+.filtros{ max-width:1200px; margin:30px auto; text-align; }
+#busqueda{ width:300px; padding:10px; margin-bottom:15px; }
+.categorias button{ padding:10px 15px; margin:5px; cursor; border; border-radius:5px; background:#2f855a; color; }
+#catalogo{ max-width:1200px; margin; padding:20px; }
+#catalogo h2{ text-align; margin-bottom:25px; }
+.productos-grid{ display; grid-template-columns(auto-fit,minmax(280px,1fr)); gap:20px; }
+.card{ background; border-radius:10px; overflow; box-shadow:0 3px 8px rgba(0,0,0,0.15); }
+.card img{ width:100%; height:220px; object-fit; }
+.card-body{ padding:15px; }
+.card h3{ margin-bottom:10px; }
+.precio{ color:#2f855a; font-size:1.3rem; font-weight; margin:10px 0; }
+.stock{ color:#666; }
+.card button{ width:100%; margin-top:15px; padding:10px; border; background:#2f855a; color; cursor; }
+.modal{ display; position; width:100%; height:100%; left:0; top:0; background(0,0,0,0.6); }
+.modal-content{ background; max-width:600px; margin:8% auto; padding:25px; border-radius:10px; }
+#cerrar{ float; cursor; font-size:28px; }
+footer{ margin-top:50px; text-align; padding:30px; background:#2f855a; color; }
+
+
+script.js
+
+
+
+
+
+
+
+const productos = [ { id:1001, nombre:"Pelota Personalizada Huellitas", desc:"Pelota resistente personalizada con nombre.", categoria_id:"Caninos", fabricante:"Pet Toys Factory", precio:8500, stock:12, activo, imagen:"https://images.unsplash.com/photo-1587300003388-59208cc962cb" }, { id:1002, nombre:"Collar Grabado Deluxe", desc:"Collar personalizado con placa metálica.", categoria_id:"Caninos", fabricante:"PetStyle", precio:12300, stock:20, activo, imagen:"https://images.unsplash.com/photo-1517849845537-4d257902454a" }, { id:1003, nombre:"Rascador Premium Gatuno", desc:"Rascador reforzado para gatos.", categoria_id:"Felinos", fabricante:"CatFun", precio:18900, stock:5, activo, imagen:"https://images.unsplash.com/photo-1519052537078-e6302a4968d4" }, { id:1004, nombre:"Ratón Interactivo", desc:"Juguete electrónico para gatos.", categoria_id:"Felinos", fabricante:"CatFun", precio:7200, stock:15, activo, imagen:"https://images.unsplash.com/photo-1574158622682-e40e69881006" }, { id:1005, nombre:"Hamaca para Conejos", desc:"Hamaca suave para descanso.", categoria_id:"Otros", fabricante:"PetHome", precio:9800, stock:7, activo, imagen:"https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308" }, { id:1006, nombre:"Juguete para Aves", desc:"Juguete colgante de colores.", categoria_id:"Otros", fabricante:"BirdPlay", precio:5400, stock:11, activo, imagen:"https://images.unsplash.com/photo-1522926193341-e9ffd686c60f" } ];
+const contenedor = document.getElementById("productos");
+function mostrarProductos(lista){
+contenedor.innerHTML="";
+lista.forEach(producto=>{
+contenedor.innerHTML += `
+function filtrarCategoria(categoria){
+if(categoria==="Todos"){ mostrarProductos(productos); return; }
+mostrarProductos( productos.filter( p=>p.categoria_id===categoria ) ); }
+document.getElementById("busqueda") .addEventListener("keyup",e=>{
+const texto=e.target.value.toLowerCase();
+mostrarProductos( productos.filter( p=>p.nombre.toLowerCase().includes(texto) ) ); });
+const modal=document.getElementById("modal"); const detalle=document.getElementById("detalleProducto");
+function verDetalle(id){
+const p=productos.find( prod=>prod.id===id );
+detalle.innerHTML=`
+modal.style.display="block"; }
+document.getElementById("cerrar") .onclick=()=>modal.style.display="none";
+window.onclick=(e)=>{ if(e.target===modal){ modal.style.display="none"; } }
+mostrarProductos(productos);
+
+Con esto ya tienes una demo bastante sólida para el TP:
+	•	✅ Landing page profesional.
+	•	✅ Catálogo generado desde el registro Producto.
+	•	✅ Búsqueda.
+	•	✅ Filtro por categoría.
+	•	✅ Vista detallada.
+	•	✅ Uso explícito de la clave id.
+	•	✅ Fácil de publicar en GitHub Pages.
+	•	✅ Fácil de explicar en el video mostrando cómo cada tarjeta refleja exactamente la estructura del registro exigido por la consigna.
+Como mejora visual para impresionar al profesor, te recomendaría reemplazar las URLs de Unsplash por imágenes locales (/img/...) para evitar problemas de carga durante la demostración.
