@@ -1,5 +1,19 @@
 # ramromer.github.io
 Proyecto Actividad N2
+Registro ORIGINAL:
+
+Producto = Registro
+	id: N(10)
+	nombre: AN(50)
+	desc: AN(300)
+	categoria_id = (“Felinos”,“Caninos”, “Otros”)
+	fabricante: AN(50)
+	precio: real
+	stock: entero
+	activo: booleano
+FinRegistro
+
+
 
 
 
