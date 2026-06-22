@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop Toys</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>🐾 Pet Shop Toys</h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <h2>Productos Personalizados para Mascotas</h2>
+    <p>Juguetes, collares y accesorios únicos para perros, gatos y otras mascotas.</p>
+    <a href="#catalogo" class="btn">Ver Catálogo</a>
+</section>
+
+<section class="filtros">
+    <input type="text" id="busqueda" placeholder="Buscar producto...">
+
+```
+<div class="categorias">
+    <button onclick="filtrarCategoria('Todos')">Todos</button>
+    <button onclick="filtrarCategoria('Caninos')">Caninos</button>
+    <button onclick="filtrarCategoria('Felinos')">Felinos</button>
+    <button onclick="filtrarCategoria('Otros')">Otros</button>
+</div>
+```
+
+</section>
+
+<section id="catalogo">
+    <h2>Nuestros Productos</h2>
+
+```
+<div id="productos" class="productos-grid"></div>
+```
+
+</section>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="cerrar">&times;</span>
+        <div id="detalleProducto"></div>
+    </div>
+</div>
+
+<footer id="contacto">
+    <h3>Pet Shop Toys</h3>
+    <p>info@petshoptoys.com</p>
+    <p>Proyecto académico de e-commerce</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
